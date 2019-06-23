@@ -2,7 +2,7 @@ class Stack {
 	constructor() {
 		this._head = null;
 		this._count = 0;
-		this.NodeCreator = require('../ListDataStructure').node
+		this.NodeCreator = require('../LinkedList/LinkedList/node');
 	}
 
 	Push(value) {

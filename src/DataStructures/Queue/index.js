@@ -3,11 +3,11 @@ class Queue {
         this._head = null;
         this._tail = null;
         this._count = 0;
-        this.NodeCreator = require('../ListDataStructure').node
+        this.NodeCreator = require('../LinkedList/LinkedList/node')
     }
 
     EnQueue(value) {
-        const newNode =new this.NodeCreator(value);
+        const newNode = new this.NodeCreator(value);
 
         if (this._head === null) {
             this._head = newNode;
