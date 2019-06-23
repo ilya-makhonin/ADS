@@ -47,7 +47,7 @@ class Stack {
 		this._count = 0;
 	}
 
-	get Volume() {
+	get Lenght() {
 		return this._count;
 	}
 }
