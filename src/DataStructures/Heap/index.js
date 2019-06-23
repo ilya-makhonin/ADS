@@ -1,8 +1,8 @@
-const minHeap = require('./minHeap');
-const maxHeap = require('./maxHeap');
+const MinHeap = require('./minHeap');
+const MaxHeap = require('./maxHeap');
 
 
 module.exports = {
-    minHeap,
-    maxHeap
+    MinHeap,
+    MaxHeap
 };
