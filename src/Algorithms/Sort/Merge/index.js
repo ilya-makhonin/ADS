@@ -1,8 +1,8 @@
-const easy = require('./easy');
-const hard = require('./hard');
+const mergeSortLazy = require('./mergeSortLazy');
+const mergeSort = require('./mergeSort');
 
 
 module.exports = {
-    mergeSortLazy: easy,
-    mergeSort: hard
+    mergeSortLazy,
+    mergeSort
 };
