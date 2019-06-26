@@ -14,7 +14,9 @@ class DoubleNode {
     }
 
     set Next(nextNode) {
-        this._next = nextNode;
+        if (nextNode instanceof DoubleNode || nextNode === null) {
+            this._next = nextNode;
+        }
     }
 
     get Previous() {
@@ -22,7 +24,9 @@ class DoubleNode {
     }
 
     set Previous(previousNode) {
-        this._previous = previousNode;
+        if (previousNode instanceof DoubleNode || previousNode === null) {
+            this._previous = previousNode;
+        }
     }
 }
 

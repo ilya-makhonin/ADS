@@ -13,7 +13,9 @@ class Node {
     }
 
     set Next(nextNode) {
-        this._next = nextNode;
+        if (nextNode instanceof Node || nextNode === null) {
+            this._next = nextNode;
+        }
     }
 }
 
