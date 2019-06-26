@@ -21,9 +21,7 @@ class Queue {
     }
 
     DeQueue() {
-        if (this._count === 0) {
-            throw new Error('The queue is empty!')
-        } else {
+        if (this._count) {
             const result = this._head.Value;
 
             if (this._count === 1) {
@@ -36,14 +34,16 @@ class Queue {
             this._count--;
             return result;
         }
+
+        throw new Error('The queue is empty!');
     }
 
     Peek() {
-        if (this._count === 0) {
-            throw new Error('The queue is empty!')
-        } else {
+        if (this._count) {
             return this._head.Value;
         }
+
+        throw new Error('The queue is empty!');
     }
 
     Clear() {

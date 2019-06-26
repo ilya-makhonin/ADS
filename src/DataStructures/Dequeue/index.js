@@ -50,6 +50,8 @@ class Dequeue {
                 return result;
             }
         }
+
+        throw new Error('The dequeue is empty!');
     }
 
     PopFront() {
@@ -66,6 +68,8 @@ class Dequeue {
                 return result;
             }
         }
+
+        throw new Error('The dequeue is empty!');
     }
 
     Clear() {
