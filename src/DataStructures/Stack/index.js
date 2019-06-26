@@ -1,12 +1,14 @@
+const Node = require('../LinkedList/LinkedList/node');
+
+
 class Stack {
 	constructor() {
 		this._head = null;
 		this._count = 0;
-		this.NodeCreator = require('../LinkedList/LinkedList/node');
 	}
 
 	Push(value) {
-		const newNode = new this.NodeCreator(value);
+		const newNode = new Node(value);
 
 		if (this._head === null) {
 			this._head = newNode;
@@ -19,9 +21,7 @@ class Stack {
 	}
 
 	Pop() {
-		if (this._count === 0) {
-			throw new Error('The Stack is empty!');
-		} else {
+		if (this._count) {
 			let result = this._head.Value;
 			if (this._count === 1) {
 				this._head = null;
@@ -32,14 +32,16 @@ class Stack {
 			this._count--;
 			return result;
 		}
+
+		throw new Error('The stack is empty!');
 	}
 
 	Peek() {
-	    if (this._count === 0) {
-            throw new Error('The stack is empty!')
-        } else {
+	    if (this._count) {
             return this._head.Value;
-        }
+		}
+		
+		throw new Error('The stack is empty!');
 	}
 
 	Clear() {

@@ -1,13 +1,15 @@
+const DoubleNode = require('../LinkedList/DoubleLinkedList/doubleNode');
+
+
 class Dequeue {
     constructor() {
         this.head = null;
         this.tail = null;
         this._count = 0;
-        this.NodeCreator = require('../LinkedList/DoubleLinkedList/doubleNode');
     }
 
     PushBack(value) {
-        let newNode = new this.NodeCreator(value);
+        let newNode = new DoubleNode(value);
 
         if (this.head === null) {
             this.head = newNode;
@@ -22,7 +24,7 @@ class Dequeue {
     }
 
     PushFront(value) {
-        let newNode = new this.NodeCreator(value);
+        let newNode = new DoubleNode(value);
 
         if (this.head === null) {
             this.head = newNode;
