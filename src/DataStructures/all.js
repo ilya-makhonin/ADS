@@ -6,7 +6,6 @@ const { MinHeap, MaxHeap } = require('./Heap');
 const Dequeue = require('./Dequeue');
 const BinarySearchTree = require('./BinaryTree');
 
-
 module.exports.allDataStructures = {
     Stack,
     Set,
