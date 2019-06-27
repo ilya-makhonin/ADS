@@ -1,0 +1,27 @@
+{
+  "name": "ads-js",
+  "version": "0.0.1",
+  "description": "Implementation some algorithms and data structures on JavaScript",
+  "keywords": [
+    "algorithms",
+    "data structures",
+    "javascript"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Ilya (Elias) Makhonin",
+    "email": "noizemkutane77@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
