@@ -2,6 +2,7 @@ const bubbleSort = require('./Sort/Bubble');
 const selectionSort = require('./Sort/Selection');
 const { mergeSort, mergeSortLazy } = require('./Sort/Merge');
 const insertionSort = require('./Sort/Insertion');
+const shellSort = require('./Sort/Shell');
 
 
 module.exports.allAldorithms = {
@@ -9,5 +10,6 @@ module.exports.allAldorithms = {
     selectionSort,
     mergeSort,
     mergeSortLazy,
-    insertionSort
+    insertionSort,
+    shellSort
 };
