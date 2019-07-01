@@ -1,8 +1,8 @@
-const mergeSortLazy = require('./mergeSortLazy');
-const mergeSort = require('./mergeSort');
+const mergeSortOutPlace = require('./mergeSortOutPlace');
+const mergeSortInPlace = require('./mergeSortInPlace');
 
 
 module.exports = {
-    mergeSortLazy,
-    mergeSort
+    mergeSortOutPlace,
+    mergeSortInPlace
 };
