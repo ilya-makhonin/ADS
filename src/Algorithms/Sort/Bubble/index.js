@@ -1,4 +1,4 @@
-function bubbleSort(items) {
+function bubbleSort(array) {
     function swap(items, left, right) {
         if (left !== right) {
             let temp = items[left];
@@ -13,15 +13,15 @@ function bubbleSort(items) {
     do {
         swapped = false;
 
-        for (let i = 1; i < items.length - count; i++) {
-            if (items[i - 1] > items[i]) {
-                swap(items, i - 1, i);
+        for (let i = 1; i < array.length - count; i++) {
+            if (array[i - 1] > array[i]) {
+                swap(array, i - 1, i);
                 swapped = true;
             }
         }
 
         count++;
-    } while (swapped && count < items.length);
+    } while (swapped && count < array.length);
 }
 
 
