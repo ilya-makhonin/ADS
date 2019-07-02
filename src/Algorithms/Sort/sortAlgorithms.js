@@ -4,6 +4,7 @@ const { mergeSort, mergeSortLazy } = require('./Merge');
 const { insertionSort, insertionSortReverse } = require('./Insertion');
 const shellSort = require('./Shell');
 const { quickSortLow, quickSortHight } = require('./Quick');
+const countingSort = require('./Counting');
 
 
 module.exports.sortAlgorithms = {
@@ -15,5 +16,6 @@ module.exports.sortAlgorithms = {
     insertionSortReverse,
     shellSort,
     quickSortLow,
-    quickSortHight
+    quickSortHight,
+    countingSort
 };
