@@ -1,3 +1,6 @@
+const swap = require('../../utils/swap');
+
+
 function quickSortLow(array) {
     function partition(array, low, hight) {
         let startCursor = low;

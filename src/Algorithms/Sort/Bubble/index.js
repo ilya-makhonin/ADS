@@ -1,12 +1,7 @@
-function bubbleSort(array) {
-    function swap(items, left, right) {
-        if (left !== right) {
-            let temp = items[left];
-            items[left] = items[right];
-            items[right] = temp;
-        }
-    }
+const swap = require('../../utils/swap');
 
+
+function bubbleSort(array) {
     let swapped;
     let count = 0;
 

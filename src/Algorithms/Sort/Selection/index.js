@@ -1,16 +1,17 @@
-function selectionSort(items) {
-    for (let i = 0; i < items.length; i++) {
+const swap = require('../../utils/swap');
+
+
+function selectionSort(array) {
+    for (let i = 0; i < array.length; i++) {
         let minValue = i;
 
-        for (let j = i + 1; j < items.length; j++) {
-            if (items[minValue] > items[j]) {
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[minValue] > array[j]) {
                 minValue = j;
             }
         }
 
-        let temp = items[i];
-        items[i] = items[minValue];
-        items[minValue] = temp;
+        swap(array, i, minValue);
     }
 }
 

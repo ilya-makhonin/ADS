@@ -1,16 +1,17 @@
-function shellSort(items){
+const swap = require('../../utils/swap');
+
+
+function shellSort(array){
     let pass = 1;
     
-    while (pass < items.length / 3) {
+    while (pass < array.length / 3) {
         pass = 3 * pass + 1;
     }
 
     while (pass > 0) {
-        for (let i = pass; i < items.length; i++) {
-            for (let j = i; j > 0 && items[j] < items[j - pass]; j -= pass) {
-                let temp = items[j];
-                items[j] = items[j - pass];
-                items[j - pass] = temp;
+        for (let i = pass; i < array.length; i++) {
+            for (let j = i; j > 0 && array[j] < array[j - pass]; j -= pass) {
+                swap(array, j, j - pass);
             }
         }
 
