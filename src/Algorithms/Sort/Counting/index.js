@@ -5,11 +5,11 @@ function countingSort(array) {
         let count = [];
  
         for (index = minValueInArray; index <= maxValueInArray; index++) {
-            count[i] = 0;
+            count[index] = 0;
         }
     
         for (index = 0; index < array.length; index++) {
-            count[array[i]]++;
+            count[array[index]]++;
         }
     
         for (index = minValueInArray; index <= maxValueInArray; index++) {
@@ -19,8 +19,8 @@ function countingSort(array) {
         }
     }
 
-    const min = array[0];
-    const max = array[0];
+    let min = array[0];
+    let max = array[0];
 
     for (let i = 1; i < array.length; i++) {
         if (min > array[i]) min = array[i];
