@@ -1,4 +1,4 @@
-function mergeSort(items) {
+function mergeSortInPalce(items) {
     function merge(items, left, right) {
         let leftIndex = 0;
         let rightIndex = 0;
@@ -39,4 +39,4 @@ function mergeSort(items) {
 }
 
 
-module.exports = mergeSort;
+module.exports = mergeSortInPalce;

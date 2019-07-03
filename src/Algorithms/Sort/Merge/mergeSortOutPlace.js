@@ -1,4 +1,4 @@
-function mergeSort(items) {
+function mergeSortOutPlace(items) {
     function merge(left, right) {
         let result = [];
 
@@ -39,4 +39,4 @@ function mergeSort(items) {
 }
 
 
-module.exports = mergeSort;
+module.exports = mergeSortOutPlace;
