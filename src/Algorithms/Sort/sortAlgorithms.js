@@ -5,9 +5,10 @@ const { insertionSort, insertionSortReverse } = require('./Insertion');
 const shellSort = require('./Shell');
 const { quickSortLow, quickSortHight } = require('./Quick');
 const countingSort = require('./Counting');
+const { minHeapSort, maxHeapSort } = require('./Heap');
 
 
-module.exports.sortAlgorithms = {
+module.exports.Sort = {
     bubbleSort,
     selectionSort,
     mergeSortInPlace,
@@ -17,5 +18,7 @@ module.exports.sortAlgorithms = {
     shellSort,
     quickSortLow,
     quickSortHight,
-    countingSort
+    countingSort,
+    minHeapSort,
+    maxHeapSort
 };
