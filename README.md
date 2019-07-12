@@ -1,7 +1,7 @@
 # Algorithms and Data Structures (ADS)
 
-Algorithms and Data Structures developed on JavaScript
+Algorithms and Data Structures developed in JavaScript
 
 ---
 
-The repository includes implementation some algorithms and data structures.
+The repository includes implementation of some algorithms and data structures.
