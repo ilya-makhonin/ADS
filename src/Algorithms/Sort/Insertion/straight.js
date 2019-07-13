@@ -10,15 +10,15 @@ function insertionSort(items) {
     }
 
     function insert(itemsArray, indexInsertionAt, indexInsertionFrom) {
-        let temp = itemsArray[indexInsertionAt];
+        let temp = itemsArray[indexInsertionAt];                        //Put this element into a temporary variable
 
-        itemsArray[indexInsertionAt] = itemsArray[indexInsertionFrom];
+        itemsArray[indexInsertionAt] = itemsArray[indexInsertionFrom];  //Insert element at index indexInsertionAt
 
         for (let current = indexInsertionFrom; current > indexInsertionAt; current--) {
-            itemsArray[current] = itemsArray[current - 1];
+            itemsArray[current] = itemsArray[current - 1];              //Move the remaining elements to the right until indexInsertionAt is reached
         }
 
-        itemsArray[indexInsertionAt + 1] = temp;
+        itemsArray[indexInsertionAt + 1] = temp;                        //Take element from a temporary variable and put it back into the array
     }
 
     let sortedRangeEndIndex = 1;
@@ -34,4 +34,4 @@ function insertionSort(items) {
 }
 
 
-module.exports = insertionSort;
+module.exports = insertionSort;                                         //Export module named insertionSort
