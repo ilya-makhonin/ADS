@@ -2,7 +2,7 @@ const swap = require('../../utils/swap');
 
 
 function bubbleSort(array) {
-    let swapped;            //Boolean variable to store swapped state
+    let swapped;                                            //Boolean variable to store swapped state
     let count = 0;
 
     do {
@@ -16,7 +16,7 @@ function bubbleSort(array) {
         }
 
         count++;
-    } while (swapped && count < array.length);
+    } while (swapped && count < array.length);              //traverse the array until count is equal to array length
 }
 
 
