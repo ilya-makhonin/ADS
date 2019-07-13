@@ -1,7 +1,7 @@
 function insertionSort(items) {
     function findInsertionIndex(items, valueToInsert) {
-        for (let i = 0; i < items.length; i++) {
-            if (items[i] > valueToInsert) {
+        for (let i = 0; i < items.length; i++) {                        //Traverse through 1 to length of array
+            if (items[i] > valueToInsert) {                             
                 return i;
             }
         }
